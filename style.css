@@ -1,0 +1,82 @@
+body{
+    background-color:  hsl(0, 0%, 98%);
+    font-weight: 400;
+    font-family: Poppins;
+}
+.text{
+    width: 500px;
+    text-align: center;
+    margin: 40px auto;
+}
+.text p{
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0;
+    font-size: 40px;
+}
+.text h1{
+    color: hsl(234, 12%, 34%);
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.text span{
+    color: hsl(229, 6%, 66%);
+    line-height: 1.3;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+.box::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box{
+    background-color: #fff;
+    width: 270px;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:5px 5px 20px #dadfef;
+}
+.d-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.box h3{
+    margin: 0;
+    color: hsl(234, 12%, 34%);
+}
+.box.team::before{
+    background-color: hsl(0, 78%, 62%);
+}
+.box.super::before{
+    background-color: hsl(180, 62%, 55%);
+}
+.box.calc::before{
+    background-color: hsl(212, 86%, 64%);
+}
+.box.karma::before{
+    background-color: hsl(34, 97%, 64%);
+}
+.box p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.box .img{
+    width: 100%;
+    text-align: right;
+}
